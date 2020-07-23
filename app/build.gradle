@@ -17,11 +17,15 @@ android {
     buildTypes {
 
         release {
-            minifyEnabled false
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
 }
 
 dependencies {
@@ -32,5 +36,12 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
-    implementation 'im.kexin.opensdk:libkexinauth:1.0.0'
+
+    implementation files('libs/gson-2.2.4.jar')
+    implementation "com.github.bumptech.glide:okhttp3-integration:4.9.0"
+    //libkexinauth 依赖与fastjson
+    implementation "com.alibaba:fastjson:1.2.58"
+    implementation "com.alibaba:fastjson:1.1.71.android"
+    //添加依赖
+    api 'im.kexin.opensdk:libkexinauth:1.0.1'
 }

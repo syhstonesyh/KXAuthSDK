@@ -32,7 +32,11 @@
 在 build.gradle 文件中，添加如下依赖即可：
 ```
 dependencies {
-     api 'im.kexin.opensdk:libkexinauth:1.0.0'
+    //libkexinauth 依赖与fastjson
+    implementation "com.alibaba:fastjson:1.2.58"
+    implementation "com.alibaba:fastjson:1.1.71.android"
+    //添加依赖
+    api 'im.kexin.opensdk:libkexinauth:1.0.1'
 }
 ```
 #### 初始化
