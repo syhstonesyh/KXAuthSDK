@@ -67,7 +67,7 @@ KXAuthClient.getInstance().auth(this, new KXAuthClient.OnKXAuthListener() {
 #### 混淆代码
 如果需要混淆代码，为了保证 sdk 的正常使用，需要混淆配置：
 ```
--keep class im.kexin.opensdk.** {
+-keep class im.kexin.opensdk.client.** {
     *;
 }
 ```
