@@ -1,2 +1,2 @@
-rootProject.name='TestAuth'
+rootProject.name='KXAuthSDKDemo'
 include ':app'

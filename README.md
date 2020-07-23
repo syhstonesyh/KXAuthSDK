@@ -1,4 +1,4 @@
-# KXAuthSDK
+# KXAuthSDKDemo
 #### 准备工作
 移动应用可信登录是基于OAuth2.0 协议标准构建的可信 OAuth2.0 授权登录系统。
 
