@@ -20,12 +20,13 @@ public class MainActivity extends AppCompatActivity {
     TextView tv_msg;
     private static final String TAG = "MainActivity";
     private static final String secret = "kx2344235";
+    private static final String appID = "100004";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         tv_msg = findViewById(R.id.tv_msg);
-        KXAuthClient.getInstance().init(this,"100004");
+        KXAuthClient.getInstance().init(this,appID);
     }
 
     public void getInfo(View view) {
