@@ -62,7 +62,14 @@ KXAuthClient.getInstance().auth(this, new KXAuthClient.OnKXAuthListener() {
             }
         });
 ```
-
+### 错误码
+```
+1 用户取消授权
+2 未安装可信app
+3 超时
+4 参数错误
+99 其他错误
+```
 
 #### 混淆代码
 如果需要混淆代码，为了保证 sdk 的正常使用，需要混淆配置：
