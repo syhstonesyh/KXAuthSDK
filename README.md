@@ -62,7 +62,7 @@ KXAuthClient.getInstance().auth(this, new KXAuthClient.OnKXAuthListener() {
             }
         });
 ```
-### 错误码
+#### 错误码
 ```
 1 用户取消授权
 2 未安装可信app
